@@ -389,26 +389,17 @@ Add in Netlify dashboard under Site Settings → Environment Variables
 
 ### Desktop View
 
-<table>
-  <tr>
-    <td><img src="./screenshots/login.png" width="300" /></td>
-    <td><img src="./screenshots/registert.png" width="300" /></td>
-  </tr>
-  <tr>
-    <td><img src="./screenshots/payment.png" width="300" /></td>
-    <td><img src="./screenshots/saved.png" width="300" /></td>
-  </tr>
-  <tr>
-    <td><img src="./screenshots/paymentdone.png" width="300" /></td>
-    <td><img src="./screenshots/createpayment.png" width="300" /></td>
-    <td><img src="./screenshots/paytype.png" width="300" /></td>
-  </tr>
-  <tr>
-    <td><img src="./screenshots/transactions.png" width="300" /></td>
-    <td><img src="./screenshots/transactioncheck.png" width="300" /></td>
-  </tr>
-</table>
-
+<p>
+  <img src="./screenshots/login.png" width="300" />
+  <img src="./screenshots/register.png" width="300" />
+  <img src="./screenshots/payment.png" width="300" />
+  <img src="./screenshots/saved.png" width="300" />
+  <img src="./screenshots/paymentdone.png" width="300" />
+  <img src="./screenshots/createpayment.png" width="300" />
+  <img src="./screenshots/paytype.png" width="300" />
+  <img src="./screenshots/transactions.png" width="300" />
+  <img src="./screenshots/transactioncheck.png" width="300" />
+</p>
 
 ## 🤝 Contributing
 
