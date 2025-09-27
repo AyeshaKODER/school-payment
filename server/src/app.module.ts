@@ -13,9 +13,7 @@ import { WebhookModule } from './webhook/webhook.module';
       imports: [ConfigModule],
       inject: [ConfigService],
       useFactory: async (configService: ConfigService) => ({
-        uri:
-          configService.get<string>('MONGODB_URI') ||
-          'mongodb://localhost:27017/school-payments',
+        uri: configService.get<string>('MONGODB_URI'),
       }),
     }),
     AuthModule,
