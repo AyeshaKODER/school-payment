@@ -1,8 +1,7 @@
-import { NestFactory } from '@nestjs/core';
+import { NestFactory, Reflector } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
 import { AppModule } from './app.module';
 import { JwtAuthGuard } from './auth/jwt-auth.guard';
-import { Reflector } from '@nestjs/core';
 import { ConfigService } from '@nestjs/config';
 import { JwtService } from '@nestjs/jwt';
 
@@ -19,12 +18,12 @@ async function bootstrap() {
   // Prefix all routes with /api
   app.setGlobalPrefix('api');
 
-  // Enable CORS Cross-Origin Resource Sharing (important for frontend <-> backend communication)
+  // Enable CORS for frontend
   app.enableCors({
     origin: [
-      'https://school-payment-frontend-xi.vercel.app', // Vercel frontend
-      'http://localhost:3000', // Backend local
-      'http://localhost:5173', // Vite frontend local
+      'https://school-payment-nine.vercel.app', // deployed frontend
+      'http://localhost:3000', // backend local
+      'http://localhost:5173', // vite dev
     ],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
@@ -68,7 +67,7 @@ async function bootstrap() {
     });
   });
 
-  // Health check endpoint
+  // Health check
   app.getHttpAdapter().get('/health', (req, res) => {
     res.status(200).json({
       status: 'OK',
@@ -78,7 +77,7 @@ async function bootstrap() {
     });
   });
 
-  // Use PORT and HOST from .env (HOST defaults to localhost in development)
+  // Use PORT and HOST from env
   const port = configService.get<number>('PORT') || 3000;
   const env = process.env.NODE_ENV || 'development';
   const host =

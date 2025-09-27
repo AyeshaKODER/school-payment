@@ -7,8 +7,8 @@ import { AuthService } from './auth.service';
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy) {
   constructor(
-    private authService: AuthService,
-    private configService: ConfigService,
+    private readonly authService: AuthService,
+    private readonly configService: ConfigService,
   ) {
     super({
       jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
@@ -18,10 +18,11 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
   }
 
   async validate(payload: any) {
+    // Validate if user exists in DB
     const user = await this.authService.validateUser(payload.sub);
     if (!user) {
-      throw new UnauthorizedException();
+      throw new UnauthorizedException('User not found');
     }
-    return user;
+    return user; // This will be attached to request.user automatically
   }
 }
