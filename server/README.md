@@ -2,6 +2,9 @@
 
 A robust NestJS-based REST API for managing school payments and transactions with MongoDB integration, JWT authentication, and webhook support.
 
+Currently deployed on Railway 🚀
+🔗 [Live API Base URL (Railway Deployment)](https://school-payment-backend-production-2b2a.up.railway.app)
+
 ## Features
 
 - JWT Authentication & Authorization
@@ -51,18 +54,19 @@ Create a `.env` file in the root directory:
 # Database
 MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/school-payments
 
-# JWT
-JWT_SECRET=your-super-secret-jwt-key
+# JWT Configuration
+JWT_SECRET=your-super-secret-jwt-key-change-in-production
 JWT_EXPIRES_IN=24h
 
-# Payment Gateway
+# Payment Gateway Configuration
 PG_KEY=edvtest01
-API_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0cnVzdGVlSWQiOiI2NWIwZTU1MmRkMzE5NTBhOWI0MWM1YmEiLCJJbmRleE9mQXBpS2V5Ijo2LCJpYXQiOjE3MTE2MjIyNzAsImV4cCI6MTc0MzE3OTg3MH0.Rye77Dp59GGxwCmwWekJHRj6edXWJnff9finjMhxKuw
+API_KEY=your-payment-gateway-api-key
 SCHOOL_ID=65b0e6293e9f76a9694d84b4
 PAYMENT_API_URL=https://api.paymentgateway.com
 
-# Server
+# Server Configuration
 PORT=3000
+NODE_ENV=production
 ```
 
 ### 4. Seed Sample Data
@@ -96,8 +100,8 @@ Content-Type: application/json
 
 {
   "username": "admin",
-  "email": "admin@schoolpay.com",
-  "password": "password123"
+  "email": "admin@school.com",
+  "password": "admin123"
 }
 ```
 
@@ -109,7 +113,7 @@ Content-Type: application/json
 
 {
   "username": "admin",
-  "password": "password123"
+  "password": "admin123"
 }
 ```
 
