@@ -4,9 +4,8 @@
 
 ## 🚀 Live Demo
 
-- **Hosted App**: [School Payment Dashboard](https://school-payment-frontend-xi.vercel.app)
-- **Backend API**: https://school-payment-backend-1.onrender.com/
-- **GitHub Repository**: [Frontend Code](https://github.com/AyeshaKODER/school-payment-frontend)
+- **Hosted App**: [School Payment Dashboard](https://school-payment-nine.vercel.app/)
+- **Backend API**: (https://school-payment-backend-production-2b2a.up.railway.app/)
 
 ## 📋 Table of Contents
 
@@ -390,31 +389,19 @@ Add in Netlify dashboard under Site Settings → Environment Variables
 
 ### Desktop View
 
+<p float="left">
+  <img src="./screenshots/login.png" width="200" />
+  <img src="./screenshots/register.png" width="200" />
+  <img src="./screenshots/chooseschool.png" width="200" />
+  <img src="./screenshots/payment.png" width="200" />
+  <img src="./screenshots/paytype.png" width="200" />
+  <img src="./screenshots/paymentdone.png" width="200" />
+  <img src="./screenshots/saved.png" width="200" />
+  <img src="./screenshots/transactions.png" width="200" />
+  <img src="./screenshots/transactioncheck.png" width="200" />
+</p>
 
-**Login Page**  
-![Login Dark](./screenshots/login.png)
 
-**Register Page**  
-![Register Light](./screenshots/registert.png)
-
-**Transactions Page - Dark Mode**
-![Transactions Dark](./screenshots/transactions-dark.png)
-
-**Advanced Filters**
-![Filters](./screenshots/filters.png)
-
-### Mobile View
-
-**Responsive Design**
-![Mobile View](./screenshots/mobile-view.png)
-
-### Interactive Features
-
-**Hover Effects**
-![Hover Effects](./screenshots/hover-effects.gif)
-
-**Multi-select Filters**
-![Multi-select](./screenshots/multi-select.png)
 
 ## 🤝 Contributing
 
