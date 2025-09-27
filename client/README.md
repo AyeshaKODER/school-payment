@@ -389,18 +389,25 @@ Add in Netlify dashboard under Site Settings → Environment Variables
 
 ### Desktop View
 
-<p float="left">
-  <img src="./screenshots/login.png" width="200" />
-  <img src="./screenshots/register.png" width="200" />
-  <img src="./screenshots/chooseschool.png" width="200" />
-  <img src="./screenshots/payment.png" width="200" />
-  <img src="./screenshots/paytype.png" width="200" />
-  <img src="./screenshots/paymentdone.png" width="200" />
-  <img src="./screenshots/saved.png" width="200" />
-  <img src="./screenshots/transactions.png" width="200" />
-  <img src="./screenshots/transactioncheck.png" width="200" />
-</p>
-
+<table>
+  <tr>
+    <td><img src="./screenshots/login.png" width="300" /></td>
+    <td><img src="./screenshots/registert.png" width="300" /></td>
+  </tr>
+  <tr>
+    <td><img src="./screenshots/payment.png" width="300" /></td>
+    <td><img src="./screenshots/saved.png" width="300" /></td>
+  </tr>
+  <tr>
+    <td><img src="./screenshots/paymentdone.png" width="300" /></td>
+    <td><img src="./screenshots/createpayment.png" width="300" /></td>
+    <td><img src="./screenshots/paytype.png" width="300" /></td>
+  </tr>
+  <tr>
+    <td><img src="./screenshots/transactions.png" width="300" /></td>
+    <td><img src="./screenshots/transactioncheck.png" width="300" /></td>
+  </tr>
+</table>
 
 
 ## 🤝 Contributing
