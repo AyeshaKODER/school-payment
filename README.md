@@ -28,9 +28,7 @@ This is a microservices architecture with two main services:
 ## 🏗️  Sequence diagram
 The following diagram shows the request flow between microservices:
 
-![System Architecture](./images/sequence.png)
-
-*This sequence diagram illustrates how client requests flow through the API gateway to various microservices and external systems.*
+![School Payment System Sequence Diagram](./images/sequence.png)
 
 ## 📁 Repository Structure
 
@@ -277,17 +275,6 @@ npm run test
 - HTTPS enforcement in production
 - Rate limiting on API endpoints
 - Input validation and sanitization
-
-## 📞 Support & Contact
-
-- **Issues**: Create GitHub issues for bugs/features
-- **Documentation**: Check service-specific README files
-- **API Questions**: See server/README.md
-- **UI/UX Questions**: See client/README.md
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
